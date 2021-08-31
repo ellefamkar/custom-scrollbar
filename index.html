@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- title -->
+    <title>custom scrollbar</title>
+</head>
+<body>
+    <main>
+      <section>
+        <h1>Custom Scrollbar</h1>
+        <br>
+        <p><strong>Note:</strong>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar">::-webkit-scrollbar is only available in Blink- and WebKit-based browsers (e.g., Chrome, Edge, Opera, Safari, all browsers on iOS, and others).</a></p>
+        <br>
+        <p>The ::-webkit-scrollbar CSS pseudo-element affects the style of an element's scrollbar when it has overflow:scroll; set. </p>
+        <br>
+        <p><strong>The Scrollbar Width :</strong>
+        First, we need to define the size of the scrollbar. This can be the width for vertical scrollbars, and the height for horizontal ones.With that set, we can style the scrollbar itself. </p>
+        <br>
+        <p><strong>The Scrollbar Track :</strong>
+        This represents the base of the scrollbar. We can style it by adding background colors, shadows, border-radius, and borders.</p>
+        <br>
+        <p><strong>The Scrollbar Thumb :</strong>
+        Once we have the base of the scrollbar ready, we need to style the scrollbar thumb. That is important as the user might drag this thumb to interact with the scrollbar. With that, we have covered the old way of styling a custom scrollbar in CSS. Let’s explore the new syntax.</p>
+        <br>
+            <h4> The New Syntax</h4>
+            <p><strong>
+        Scrollbar Width:</strong>
+        As it says, this defines the scrollbar width and the values we care about most are auto and thin. Unfortunately, we can’t define a specific number like in the webkit syntax.</p>
+        <br>
+            <p><strong>
+        Scrollbar Color:</strong>
+        With this property, we can define a color for both the scrollbar track and thumb as pair values.As simple as this new syntax is, but it’s limiting. We can only apply solid colors. We can’t add shadows, gradients, rounded edges, or anything like that. What we’re allowed to customize is the colors only.</p>
+        <br>
+            <p><strong>
+            You can use the following pseudo-elements to customize various parts of the scrollbar for webkit browsers:</strong></p>
+            <div>
+            <ul>
+                <li>::-webkit-scrollbar — the entire scrollbar.</li>
+                <li>::-webkit-scrollbar-button — the buttons on the scrollbar (arrows pointing upwards and downwards that scroll one line at a time).</li>
+                <li>::-webkit-scrollbar-thumb — the draggable scrolling handle.</li>
+                <li>::-webkit-scrollbar-track — the track (progress bar) of the scrollbar, where there is a gray bar on top of a white bar.</li>
+                <li>::-webkit-scrollbar-track-piece — the part of the track (progress bar) not covered by the handle.</li>
+                <li>::-webkit-scrollbar-corner — the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet This is often the bottom-right corner of the browser window.</li>
+                <li>::-webkit-resizer — the draggable resizing handle that appears at the bottom corner of some elements.</li>
+            </ul>
+            </div>
+        <br>
+            Content from <a href="https://ishadeed.com/article/custom-scrollbars-css/"> Ahmad Shaheed </a> , <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar"> MDN Web Docs</a> and <a href="https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp" > W3schools</a>
+        </section>
+        </main>
+    </body>
+</html>
